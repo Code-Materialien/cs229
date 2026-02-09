@@ -1,0 +1,43 @@
+# include(Base.IncludeInto)(Base.SubString)
+using Base
+# using Core
+
+
+f = open("../../datasets/basic_vehicles.csv");
+lines = readlines(f);
+
+
+θ::Base.Vector = [0.5, 0.01, 0.24];
+# X = Base.Matrix{Float16}(undef, length(lines) - 1, 6);
+X = Base.Matrix{String}(undef, length(lines) - 1, 6)
+
+print("Theta values: $θ \n");
+print("X: $X")
+
+# global ctr = 1
+for (i, l) in enumerate(lines[2:end])
+    # if ctr == 1
+    #     println("h  ̶ $l")
+    #     splitted_h = split(l, ";")
+    #     # setindex!(X, splitted_h, 1)
+    # else
+
+    # Now l is a Array of Substrings
+    # splitted_l::Vector{Base.SubString{String}} = split(l, ";")
+
+    # brandname = getindex(splitted_l, 1)
+    # println("splitted brandname ⇏ $brandname \n")
+
+    # For each one of this readlines component we 
+    # should create a vector line representing the
+    # item (the car)
+    # m = ctr - 1
+    X[i, :] = split(l, ";")
+    # setindex!(X, splitted_l, ctr)
+end
+# global ctr += 1
+
+
+close(f)
+
+println("X ⇏ $X")

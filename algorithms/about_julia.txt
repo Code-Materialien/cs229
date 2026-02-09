@@ -1,0 +1,9 @@
+- Atribuição por fatia (slicing)
+
+
+
+
+- Global Counter (ctr): Usar global dentro de loops é um anti-padrão em Julia que destrói a performance (impede a especialização do compilador).
+
+
+
