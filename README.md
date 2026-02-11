@@ -1,10 +1,10 @@
-# CS229 Machine Learning - Practical Environment (Julia Implementation)
+# CS229 Machine Learning - Practical Environment
 
-A comprehensive practical environment for Stanford's CS229 Machine Learning course using Julia.
+A comprehensive practical environment for Stanford's CS229 Machine Learning course using Python.
 
 ## Overview
 
-This repository provides hands-on implementations and exercises for CS229 in Julia, covering fundamental machine learning concepts and algorithms from first principles.
+This repository provides hands-on implementations and exercises for CS229 in Python, covering fundamental machine learning concepts and algorithms from first principles.
 
 ## Contents
 
@@ -12,28 +12,28 @@ This repository provides hands-on implementations and exercises for CS229 in Jul
 - **Problem Sets**: Assignments with Julia solutions
 - **Algorithms**: Julia implementations of core ML algorithms
 - **Datasets**: Sample data for exercises
-- **Notebooks**: Pluto notebooks for interactive learning
+- **Notebooks**: Jupyter notebooks for interactive learning
 
 ## Getting Started
 
 ### Prerequisites
 
-- Julia 1.8+
-- Packages: LinearAlgebra, Statistics, Plots, MLUtils
-- Pluto.jl (optional, for interactive notebooks)
+- Python 3.8+
+- Packages: numpy, pandas, scikit-learn, matplotlib
+- Jupyter (optional, for interactive notebooks)
 
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/cs229-julia.git
-cd cs229-julia
-julia --project -e "using Pkg; Pkg.instantiate()"
+git clone https://github.com/yourusername/cs229-python.git
+cd cs229-python
+pip install -r requirements.txt
 ```
 
 ### Running Examples
 
 ```bash
-julia --project examples/example_name.jl
+python examples/example_name.py
 ```
 
 ## Topics Covered
@@ -47,7 +47,7 @@ julia --project examples/example_name.jl
 ## Resources
 
 - [CS229 Course](https://cs229.stanford.edu/)
-- [Julia Language](https://julialang.org/)
+- [Python Language](https://www.python.org/)
 
 ## Contributing
 
