@@ -61,11 +61,26 @@ print(y_test[:5])
 
 # Hypothesis function 
 # hᶿ(X) = x₀ + 𝜃₁.x₁ + 𝜽₂.x₂ + 𝜽₃.x₃ (this will lead to a prediction)
+def hypothesis(𝜃: List[float], features: List[float], intercept: float = 0.0):
+    if len(𝜃) != len(features):
+        raise Exception()
+    terms_sum = intercept + 𝜃[0]*features[0] + 𝜃[1]*features[1] + 𝜃[2]*features[2]
 
-# Will be the prediction right or wrong? Positive ou negative?
+    return terms_sum
 
 # Loss function
 # J(𝜽) = ½𝚺 (hᶿ(xⁱ) - yⁱ)²
+# Observation: Loss function returns a Mean Squared Error for calculating the absolute error and 
+# fit it into a parabola and also the raw error including the sign; the last will be used to calculate
+# gradient descent
+def loss_function():
+    pass 
+
+for x in X_train:
+    features = x[2:]
+    h = hypothesis(𝜃, features)
+
+
 
 
 
