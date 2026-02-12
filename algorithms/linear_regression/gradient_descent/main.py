@@ -1,13 +1,8 @@
-
-
 import csv
 from typing import Tuple, List
-
 from tabulate import tabulate
-
 # import array
 # from pprint import pprint
-
 
 
 with open('../../../datasets/linear_regression_vehicles.csv') as score_opportunity_file:
@@ -20,26 +15,15 @@ with open('../../../datasets/linear_regression_vehicles.csv') as score_opportuni
     df = []
     labels = []
     for idx, row in ocurrences:
-        if idx <= 4:
-            print(row[:-1])
-            print(row[-1])
-
         df.append(row[:-1])
         labels.append(float(row[-1]))
         # print(', '.join(f"{idx}: {row}\n"))
 
-# print("\n\n")
-# print(tabulate(df[:5]))
-# print(labels[:5])
-
 
 def split_dataset(data: List[List], labels: List[float], train_size: float = 0.8) -> Tuple[List, List, List, List]:
-    # print(f"data: {data}")
-    # print(f"labels: {labels}")
-
     split_index = round(len(data) * train_size)
 
-    print(f"split index: {split_index}")
+    # print(f"split index: {split_index}")
 
     training_data = data[:split_index]
     testing_data = data[split_index:]
