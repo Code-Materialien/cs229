@@ -1,0 +1,5 @@
+Hypothesis function 
+hᶿ(X) = x₀ + 𝜃₁.x₁ + 𝜽₂.x₂ + 𝜽₃.x₃ (this will lead to a prediction)
+
+Loss function
+J(𝜽) = ½𝚺 (hᶿ(xⁱ) - yⁱ)²
